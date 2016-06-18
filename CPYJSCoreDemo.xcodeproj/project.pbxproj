@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		963D58801D151629000AAC0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D587F1D151629000AAC0F /* main.m */; };
+		963D58831D151629000AAC0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D58821D151629000AAC0F /* AppDelegate.m */; };
+		963D58861D151629000AAC0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D58851D151629000AAC0F /* ViewController.m */; };
+		963D58891D151629000AAC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963D58871D151629000AAC0F /* Main.storyboard */; };
+		963D588C1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963D588A1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodeld */; };
+		963D588E1D151629000AAC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963D588D1D151629000AAC0F /* Assets.xcassets */; };
+		963D58911D151629000AAC0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963D588F1D151629000AAC0F /* LaunchScreen.storyboard */; };
+		963D589C1D151629000AAC0F /* CPYJSCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D589B1D151629000AAC0F /* CPYJSCoreDemoTests.m */; };
+		963D58A71D151629000AAC0F /* CPYJSCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D58A61D151629000AAC0F /* CPYJSCoreDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		963D58981D151629000AAC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963D58731D151628000AAC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 963D587A1D151628000AAC0F;
+			remoteInfo = CPYJSCoreDemo;
+		};
+		963D58A31D151629000AAC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963D58731D151628000AAC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 963D587A1D151628000AAC0F;
+			remoteInfo = CPYJSCoreDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		963D587B1D151628000AAC0F /* CPYJSCoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPYJSCoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963D587F1D151629000AAC0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		963D58811D151629000AAC0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		963D58821D151629000AAC0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		963D58841D151629000AAC0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		963D58851D151629000AAC0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		963D58881D151629000AAC0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		963D588B1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CPYJSCoreDemo.xcdatamodel; sourceTree = "<group>"; };
+		963D588D1D151629000AAC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		963D58901D151629000AAC0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		963D58921D151629000AAC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963D58971D151629000AAC0F /* CPYJSCoreDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPYJSCoreDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		963D589B1D151629000AAC0F /* CPYJSCoreDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPYJSCoreDemoTests.m; sourceTree = "<group>"; };
+		963D589D1D151629000AAC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963D58A21D151629000AAC0F /* CPYJSCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPYJSCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		963D58A61D151629000AAC0F /* CPYJSCoreDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPYJSCoreDemoUITests.m; sourceTree = "<group>"; };
+		963D58A81D151629000AAC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		963D58781D151628000AAC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963D58941D151629000AAC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963D589F1D151629000AAC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		963D58721D151628000AAC0F = {
+			isa = PBXGroup;
+			children = (
+				963D587D1D151629000AAC0F /* CPYJSCoreDemo */,
+				963D589A1D151629000AAC0F /* CPYJSCoreDemoTests */,
+				963D58A51D151629000AAC0F /* CPYJSCoreDemoUITests */,
+				963D587C1D151628000AAC0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		963D587C1D151628000AAC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963D587B1D151628000AAC0F /* CPYJSCoreDemo.app */,
+				963D58971D151629000AAC0F /* CPYJSCoreDemoTests.xctest */,
+				963D58A21D151629000AAC0F /* CPYJSCoreDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963D587D1D151629000AAC0F /* CPYJSCoreDemo */ = {
+			isa = PBXGroup;
+			children = (
+				963D58811D151629000AAC0F /* AppDelegate.h */,
+				963D58821D151629000AAC0F /* AppDelegate.m */,
+				963D58841D151629000AAC0F /* ViewController.h */,
+				963D58851D151629000AAC0F /* ViewController.m */,
+				963D58871D151629000AAC0F /* Main.storyboard */,
+				963D588D1D151629000AAC0F /* Assets.xcassets */,
+				963D588F1D151629000AAC0F /* LaunchScreen.storyboard */,
+				963D58921D151629000AAC0F /* Info.plist */,
+				963D588A1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodeld */,
+				963D587E1D151629000AAC0F /* Supporting Files */,
+			);
+			path = CPYJSCoreDemo;
+			sourceTree = "<group>";
+		};
+		963D587E1D151629000AAC0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				963D587F1D151629000AAC0F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		963D589A1D151629000AAC0F /* CPYJSCoreDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				963D589B1D151629000AAC0F /* CPYJSCoreDemoTests.m */,
+				963D589D1D151629000AAC0F /* Info.plist */,
+			);
+			path = CPYJSCoreDemoTests;
+			sourceTree = "<group>";
+		};
+		963D58A51D151629000AAC0F /* CPYJSCoreDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				963D58A61D151629000AAC0F /* CPYJSCoreDemoUITests.m */,
+				963D58A81D151629000AAC0F /* Info.plist */,
+			);
+			path = CPYJSCoreDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		963D587A1D151628000AAC0F /* CPYJSCoreDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963D58AB1D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemo" */;
+			buildPhases = (
+				963D58771D151628000AAC0F /* Sources */,
+				963D58781D151628000AAC0F /* Frameworks */,
+				963D58791D151628000AAC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPYJSCoreDemo;
+			productName = CPYJSCoreDemo;
+			productReference = 963D587B1D151628000AAC0F /* CPYJSCoreDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		963D58961D151629000AAC0F /* CPYJSCoreDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963D58AE1D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemoTests" */;
+			buildPhases = (
+				963D58931D151629000AAC0F /* Sources */,
+				963D58941D151629000AAC0F /* Frameworks */,
+				963D58951D151629000AAC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				963D58991D151629000AAC0F /* PBXTargetDependency */,
+			);
+			name = CPYJSCoreDemoTests;
+			productName = CPYJSCoreDemoTests;
+			productReference = 963D58971D151629000AAC0F /* CPYJSCoreDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		963D58A11D151629000AAC0F /* CPYJSCoreDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963D58B11D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemoUITests" */;
+			buildPhases = (
+				963D589E1D151629000AAC0F /* Sources */,
+				963D589F1D151629000AAC0F /* Frameworks */,
+				963D58A01D151629000AAC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				963D58A41D151629000AAC0F /* PBXTargetDependency */,
+			);
+			name = CPYJSCoreDemoUITests;
+			productName = CPYJSCoreDemoUITests;
+			productReference = 963D58A21D151629000AAC0F /* CPYJSCoreDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		963D58731D151628000AAC0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = CPY;
+				TargetAttributes = {
+					963D587A1D151628000AAC0F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					963D58961D151629000AAC0F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 963D587A1D151628000AAC0F;
+					};
+					963D58A11D151629000AAC0F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 963D587A1D151628000AAC0F;
+					};
+				};
+			};
+			buildConfigurationList = 963D58761D151628000AAC0F /* Build configuration list for PBXProject "CPYJSCoreDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 963D58721D151628000AAC0F;
+			productRefGroup = 963D587C1D151628000AAC0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				963D587A1D151628000AAC0F /* CPYJSCoreDemo */,
+				963D58961D151629000AAC0F /* CPYJSCoreDemoTests */,
+				963D58A11D151629000AAC0F /* CPYJSCoreDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		963D58791D151628000AAC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963D58911D151629000AAC0F /* LaunchScreen.storyboard in Resources */,
+				963D588E1D151629000AAC0F /* Assets.xcassets in Resources */,
+				963D58891D151629000AAC0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963D58951D151629000AAC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963D58A01D151629000AAC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		963D58771D151628000AAC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963D58861D151629000AAC0F /* ViewController.m in Sources */,
+				963D588C1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodeld in Sources */,
+				963D58831D151629000AAC0F /* AppDelegate.m in Sources */,
+				963D58801D151629000AAC0F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963D58931D151629000AAC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963D589C1D151629000AAC0F /* CPYJSCoreDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963D589E1D151629000AAC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963D58A71D151629000AAC0F /* CPYJSCoreDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		963D58991D151629000AAC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 963D587A1D151628000AAC0F /* CPYJSCoreDemo */;
+			targetProxy = 963D58981D151629000AAC0F /* PBXContainerItemProxy */;
+		};
+		963D58A41D151629000AAC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 963D587A1D151628000AAC0F /* CPYJSCoreDemo */;
+			targetProxy = 963D58A31D151629000AAC0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		963D58871D151629000AAC0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963D58881D151629000AAC0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		963D588F1D151629000AAC0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963D58901D151629000AAC0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		963D58A91D151629000AAC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		963D58AA1D151629000AAC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		963D58AC1D151629000AAC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CPYJSCoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		963D58AD1D151629000AAC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CPYJSCoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		963D58AF1D151629000AAC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CPYJSCoreDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPYJSCoreDemo.app/CPYJSCoreDemo";
+			};
+			name = Debug;
+		};
+		963D58B01D151629000AAC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CPYJSCoreDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPYJSCoreDemo.app/CPYJSCoreDemo";
+			};
+			name = Release;
+		};
+		963D58B21D151629000AAC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CPYJSCoreDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CPYJSCoreDemo;
+			};
+			name = Debug;
+		};
+		963D58B31D151629000AAC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CPYJSCoreDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CPYJSCoreDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		963D58761D151628000AAC0F /* Build configuration list for PBXProject "CPYJSCoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963D58A91D151629000AAC0F /* Debug */,
+				963D58AA1D151629000AAC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963D58AB1D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963D58AC1D151629000AAC0F /* Debug */,
+				963D58AD1D151629000AAC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		963D58AE1D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963D58AF1D151629000AAC0F /* Debug */,
+				963D58B01D151629000AAC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		963D58B11D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963D58B21D151629000AAC0F /* Debug */,
+				963D58B31D151629000AAC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		963D588A1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				963D588B1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodel */,
+			);
+			currentVersion = 963D588B1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodel */;
+			path = CPYJSCoreDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 963D58731D151628000AAC0F /* Project object */;
+}
