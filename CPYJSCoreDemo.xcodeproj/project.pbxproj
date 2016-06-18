@@ -16,6 +16,7 @@
 		963D58911D151629000AAC0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963D588F1D151629000AAC0F /* LaunchScreen.storyboard */; };
 		963D589C1D151629000AAC0F /* CPYJSCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D589B1D151629000AAC0F /* CPYJSCoreDemoTests.m */; };
 		963D58A71D151629000AAC0F /* CPYJSCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D58A61D151629000AAC0F /* CPYJSCoreDemoUITests.m */; };
+		963D58B51D151D44000AAC0F /* JSCoreDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 963D58B41D151D44000AAC0F /* JSCoreDemo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		963D58A21D151629000AAC0F /* CPYJSCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPYJSCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		963D58A61D151629000AAC0F /* CPYJSCoreDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPYJSCoreDemoUITests.m; sourceTree = "<group>"; };
 		963D58A81D151629000AAC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963D58B41D151D44000AAC0F /* JSCoreDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCoreDemo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				963D58821D151629000AAC0F /* AppDelegate.m */,
 				963D58841D151629000AAC0F /* ViewController.h */,
 				963D58851D151629000AAC0F /* ViewController.m */,
+				963D58B41D151D44000AAC0F /* JSCoreDemo.html */,
 				963D58871D151629000AAC0F /* Main.storyboard */,
 				963D588D1D151629000AAC0F /* Assets.xcassets */,
 				963D588F1D151629000AAC0F /* LaunchScreen.storyboard */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				963D58911D151629000AAC0F /* LaunchScreen.storyboard in Resources */,
+				963D58B51D151D44000AAC0F /* JSCoreDemo.html in Resources */,
 				963D588E1D151629000AAC0F /* Assets.xcassets in Resources */,
 				963D58891D151629000AAC0F /* Main.storyboard in Resources */,
 			);
