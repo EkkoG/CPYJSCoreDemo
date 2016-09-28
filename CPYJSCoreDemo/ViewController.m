@@ -39,10 +39,11 @@
     self.context = context;
     
     __weak typeof(self) weakSelf = self;
-    self.context[@"ocAlert"] = ^{
+    self.context[@"ocAlert"] = ^(NSString *string){
         dispatch_async(dispatch_get_main_queue(), ^{
             __strong typeof(weakSelf) strongSelf = weakSelf;
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:@"这是OC中的弹框!" preferredStyle:UIAlertControllerStyleAlert];
+            NSString *message = [NSString stringWithFormat:@"%@%@", @"这是OC中的弹框!", string];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
             [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 [alert dismissViewControllerAnimated:YES completion:^{
                     
@@ -60,7 +61,7 @@
     }
     
     JSValue *funcValue = self.context[@"alertFunc"];
-    [funcValue callWithArguments:nil];
+    [funcValue callWithArguments:@[@"ahh"]];
 }
 
 - (void)didReceiveMemoryWarning {

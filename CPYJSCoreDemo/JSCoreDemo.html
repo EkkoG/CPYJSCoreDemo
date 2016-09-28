@@ -4,11 +4,16 @@
     <p>这是一个测试网页</p>
 
     <body>
-    <button onclick="ocAlert()">点击这里</button>
+    <button onclick="buttonClick()">点击这里</button>
   </body>
   <script>
-  function alertFunc() {
-    window.alert("这是一个JS中的弹框！")
-  }
+      
+      function buttonClick() {
+          ocAlert("js ahhh")
+      }
+  
+      function alertFunc(string) {
+        window.alert("这是一个JS中的弹框！" + string)
+      }
   </script>
  </html>
