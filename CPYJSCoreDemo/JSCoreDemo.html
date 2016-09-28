@@ -11,14 +11,18 @@
     var jsBool = false
     var jsInt = 100
     
+    function ocCallback() {
+      window.alert("oc 回调了")
+    }
+    
       function buttonClick() {
-          var ocReturnValue = ocAlert("js ahhh")
-          window.alert("oc return value is " + ocReturnValue)
+          window.alert("js 按钮被点击了")
+          ocAlert(ocCallback)
       }
   
-      function alertFunc(string) {
-        window.alert("这是一个JS中的弹框！" + string)
-        return "js ahhh"
+      function alertFunc(callback) {
+<!--        window.alert("这是一个JS中的弹框！")-->
+        setTimeout(callback, 2000);
       }
   </script>
  </html>

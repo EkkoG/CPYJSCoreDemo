@@ -38,10 +38,11 @@
     
     self.context = context;
     
+    
     JSValue *returnValue = [JSValue valueWithObject:@"oc ahh" inContext:self.context];
-    self.context[@"ocAlert"] = ^JSValue *(JSValue *string){
-        NSLog(@"%@", [string toString]);
-        return returnValue;
+    self.context[@"ocAlert"] = ^(JSValue *calback){
+        sleep(2);
+        [calback callWithArguments:nil];
     };
 }
 
@@ -51,8 +52,14 @@
         return;
     }
     
+    void (^block)(void) = ^{
+        NSLog(@"js 回调了");
+    };
+    
+    
+    NSLog(@"按钮被点击了");
     JSValue *funcValue = self.context[@"alertFunc"];
-    JSValue * jsReturnValue = [funcValue callWithArguments:@[[JSValue valueWithObject:@"ahh" inContext:self.context]]];
+    JSValue * jsReturnValue = [funcValue callWithArguments:@[[JSValue valueWithObject:block inContext:self.context]]];
     
     NSLog(@"js return value is %@", [jsReturnValue toString]);
     
