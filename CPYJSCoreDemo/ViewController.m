@@ -38,19 +38,10 @@
     
     self.context = context;
     
-    __weak typeof(self) weakSelf = self;
-    self.context[@"ocAlert"] = ^(NSString *string){
-        dispatch_async(dispatch_get_main_queue(), ^{
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            NSString *message = [NSString stringWithFormat:@"%@%@", @"这是OC中的弹框!", string];
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
-            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                [alert dismissViewControllerAnimated:YES completion:^{
-                    
-                }];
-            }]];
-            [strongSelf.navigationController presentViewController:alert animated:YES completion:nil];
-        });
+    JSValue *returnValue = [JSValue valueWithObject:@"oc ahh" inContext:self.context];
+    self.context[@"ocAlert"] = ^JSValue *(JSValue *string){
+        NSLog(@"%@", [string toString]);
+        return returnValue;
     };
 }
 
@@ -61,7 +52,18 @@
     }
     
     JSValue *funcValue = self.context[@"alertFunc"];
-    [funcValue callWithArguments:@[@"ahh"]];
+    JSValue * jsReturnValue = [funcValue callWithArguments:@[[JSValue valueWithObject:@"ahh" inContext:self.context]]];
+    
+    NSLog(@"js return value is %@", [jsReturnValue toString]);
+    
+    JSValue *jsString = self.context[@"jsString"];
+    NSLog(@"js string var is %@", [jsString toString]);
+    
+    JSValue *jsBool = self.context[@"jsBool"];
+    NSLog(@"js bool var is %d", [jsBool toBool]);
+    
+    JSValue *jsInt = self.context[@"jsInt"];
+    NSLog(@"js int var is %d", [jsInt toInt32]);
 }
 
 - (void)didReceiveMemoryWarning {

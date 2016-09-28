@@ -7,13 +7,18 @@
     <button onclick="buttonClick()">点击这里</button>
   </body>
   <script>
-      
+    var jsString = "js string"
+    var jsBool = false
+    var jsInt = 100
+    
       function buttonClick() {
-          ocAlert("js ahhh")
+          var ocReturnValue = ocAlert("js ahhh")
+          window.alert("oc return value is " + ocReturnValue)
       }
   
       function alertFunc(string) {
         window.alert("这是一个JS中的弹框！" + string)
+        return "js ahhh"
       }
   </script>
  </html>
