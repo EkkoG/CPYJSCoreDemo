@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9615EE1F1D9CB61400D6D4B4 /* JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9615EE1E1D9CB61400D6D4B4 /* JSBridge.m */; };
 		963D58801D151629000AAC0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D587F1D151629000AAC0F /* main.m */; };
 		963D58831D151629000AAC0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D58821D151629000AAC0F /* AppDelegate.m */; };
 		963D58861D151629000AAC0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D58851D151629000AAC0F /* ViewController.m */; };
@@ -38,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9615EE1D1D9CB61400D6D4B4 /* JSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBridge.h; sourceTree = "<group>"; };
-		9615EE1E1D9CB61400D6D4B4 /* JSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBridge.m; sourceTree = "<group>"; };
 		963D587B1D151628000AAC0F /* CPYJSCoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPYJSCoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963D587F1D151629000AAC0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		963D58811D151629000AAC0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,8 +109,6 @@
 				963D58821D151629000AAC0F /* AppDelegate.m */,
 				963D58841D151629000AAC0F /* ViewController.h */,
 				963D58851D151629000AAC0F /* ViewController.m */,
-				9615EE1D1D9CB61400D6D4B4 /* JSBridge.h */,
-				9615EE1E1D9CB61400D6D4B4 /* JSBridge.m */,
 				963D58B41D151D44000AAC0F /* JSCoreDemo.html */,
 				963D58871D151629000AAC0F /* Main.storyboard */,
 				963D588D1D151629000AAC0F /* Assets.xcassets */,
@@ -285,7 +280,6 @@
 			files = (
 				963D58861D151629000AAC0F /* ViewController.m in Sources */,
 				963D588C1D151629000AAC0F /* CPYJSCoreDemo.xcdatamodeld in Sources */,
-				9615EE1F1D9CB61400D6D4B4 /* JSBridge.m in Sources */,
 				963D58831D151629000AAC0F /* AppDelegate.m in Sources */,
 				963D58801D151629000AAC0F /* main.m in Sources */,
 			);
