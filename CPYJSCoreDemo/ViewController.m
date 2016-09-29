@@ -37,13 +37,6 @@
     }];
     
     self.context = context;
-    
-    
-    JSValue *returnValue = [JSValue valueWithObject:@"oc ahh" inContext:self.context];
-    self.context[@"ocAlert"] = ^(JSValue *calback){
-        sleep(2);
-        [calback callWithArguments:nil];
-    };
 }
 
 
@@ -51,17 +44,6 @@
     if (!self.context) {
         return;
     }
-    
-    void (^block)(void) = ^{
-        NSLog(@"js 回调了");
-    };
-    
-    
-    NSLog(@"按钮被点击了");
-    JSValue *funcValue = self.context[@"alertFunc"];
-    JSValue * jsReturnValue = [funcValue callWithArguments:@[[JSValue valueWithObject:block inContext:self.context]]];
-    
-    NSLog(@"js return value is %@", [jsReturnValue toString]);
     
     JSValue *jsString = self.context[@"jsString"];
     NSLog(@"js string var is %@", [jsString toString]);

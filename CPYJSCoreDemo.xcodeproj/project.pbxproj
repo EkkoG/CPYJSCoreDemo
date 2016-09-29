@@ -213,6 +213,7 @@
 				TargetAttributes = {
 					963D587A1D151628000AAC0F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9ATJLJZ6BL;
 					};
 					963D58961D151629000AAC0F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -423,7 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ATJLJZ6BL;
 				INFOPLIST_FILE = CPYJSCoreDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ATJLJZ6BL;
 				INFOPLIST_FILE = CPYJSCoreDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYJSCoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,6 +511,7 @@
 				963D58AD1D151629000AAC0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		963D58AE1D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				963D58B01D151629000AAC0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		963D58B11D151629000AAC0F /* Build configuration list for PBXNativeTarget "CPYJSCoreDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +529,7 @@
 				963D58B31D151629000AAC0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
