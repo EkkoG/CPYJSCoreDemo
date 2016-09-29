@@ -38,10 +38,10 @@
     
     self.context = context;
     
-    JSValue *returnValue = [JSValue valueWithObject:@"oc ahh" inContext:self.context];
+    __weak typeof(self) weakSelf = self;
     self.context[@"ocAlert"] = ^JSValue *(JSValue *string){
         NSLog(@"%@", [string toString]);
-        return returnValue;
+        return [JSValue valueWithObject:@"oc ahh" inContext:weakSelf.context];
     };
 }
 
@@ -55,15 +55,6 @@
     JSValue * jsReturnValue = [funcValue callWithArguments:@[[JSValue valueWithObject:@"ahh" inContext:self.context]]];
     
     NSLog(@"js return value is %@", [jsReturnValue toString]);
-    
-    JSValue *jsString = self.context[@"jsString"];
-    NSLog(@"js string var is %@", [jsString toString]);
-    
-    JSValue *jsBool = self.context[@"jsBool"];
-    NSLog(@"js bool var is %d", [jsBool toBool]);
-    
-    JSValue *jsInt = self.context[@"jsInt"];
-    NSLog(@"js int var is %d", [jsInt toInt32]);
 }
 
 - (void)didReceiveMemoryWarning {
