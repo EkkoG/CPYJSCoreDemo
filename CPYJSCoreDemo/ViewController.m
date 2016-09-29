@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "JSBridge.h"
 
 @interface ViewController () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -38,12 +39,7 @@
     
     self.context = context;
     
-    
-    JSValue *returnValue = [JSValue valueWithObject:@"oc ahh" inContext:self.context];
-    self.context[@"ocAlert"] = ^(JSValue *calback){
-        sleep(2);
-        [calback callWithArguments:nil];
-    };
+    self.context[@"ocObj"] = [[JSBridge alloc] init];
 }
 
 
@@ -52,25 +48,8 @@
         return;
     }
     
-    void (^block)(void) = ^{
-        NSLog(@"js 回调了");
-    };
-    
-    
-    NSLog(@"按钮被点击了");
     JSValue *funcValue = self.context[@"alertFunc"];
-    JSValue * jsReturnValue = [funcValue callWithArguments:@[[JSValue valueWithObject:block inContext:self.context]]];
-    
-    NSLog(@"js return value is %@", [jsReturnValue toString]);
-    
-    JSValue *jsString = self.context[@"jsString"];
-    NSLog(@"js string var is %@", [jsString toString]);
-    
-    JSValue *jsBool = self.context[@"jsBool"];
-    NSLog(@"js bool var is %d", [jsBool toBool]);
-    
-    JSValue *jsInt = self.context[@"jsInt"];
-    NSLog(@"js int var is %d", [jsInt toInt32]);
+    [funcValue callWithArguments:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,22 +7,12 @@
     <button onclick="buttonClick()">点击这里</button>
   </body>
   <script>
-    var jsString = "js string"
-    var jsBool = false
-    var jsInt = 100
-    
-    function ocCallback() {
-      window.alert("oc 回调了")
-    }
-    
       function buttonClick() {
-          window.alert("js 按钮被点击了")
-          ocAlert(ocCallback)
+          ocAlert()
       }
   
-      function alertFunc(callback) {
-<!--        window.alert("这是一个JS中的弹框！")-->
-        setTimeout(callback, 2000);
+      function alertFunc() {
+        window.alert("这是一个JS中的弹框！" + ocObj.addB(3,5))
       }
   </script>
  </html>
